@@ -1,0 +1,218 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script>
+  <style type="text/tailwindcss">
+    
+    .a-datepicker {
+      @apply bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:min-w-0 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+    
+    .a-label {
+      @apply bg-transparent appearance-none border border-gray-300 rounded-lg md:min-w-0 py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500;
+    }
+
+    .a-selectlabel{
+      @apply block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400;
+    }
+
+    .a-selectlabel-overlay {
+      @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block md:min-w-0 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+  
+  
+  </style>
+</head>
+<body>
+  <h1 class="text-3xl font-bold p-6">
+    Formulaire
+  </h1>
+  <h2 class="text-2xl font-bold underline pl-6 pb-6">
+    Contexte
+  </h2>
+  
+  <div date-rangepicker class="block items-center p-6">
+    <div class="relative">
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+          </div>
+          <input name="start" type="text" class="a-datepicker";
+          " placeholder="Date d'entrée'">
+      </div>
+    <span class="mx-4 text-gray-500">-</span>
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+      </div>
+      <input name="end" type="text" class="a-datepicker" placeholder="Date de sortie">
+  </div>
+  <span class="mx-4 text-gray-500">-</span>
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+      </div>
+      <input name="end" type="text" class="a-datepicker" placeholder="Date du formulaire">
+  </div>
+</div>
+<!--************ Coordonnées ************** -->
+
+  <h2 class="text-2xl font-bold underline pl-6 pb-6">
+    Coordonnées
+  </h2>
+  <h3 class="text-1xl font-bold pl-6 pb-6">
+    Centre
+  </h3>
+  <div class="md:w-2/3 pl-6">
+    <input class="a-label" id="center" type="text" placeholder="Entrez un nom">
+  </div>
+
+  <h3 class="text-1xl font-bold p-6">
+    Nom du formateur
+  </h3>
+  <div class="md:w-2/3 pl-6">
+    <input class="a-label" id="name-form" type="text" placeholder="Entrez un nom">
+  </div>
+  
+  <h3 class="text-1xl font-bold p-6">
+    Prénom du formateur
+  </h3>
+  <div class="md:w-2/3 pl-6">
+    <input class="a-label" id="surname-form" type="text" placeholder="Entrez un prénom">
+  </div>
+
+  <h3 class="text-1xl font-bold p-6">
+    Nom du stagiaire
+  </h3>
+  <div class="md:w-2/3 pl-6">
+    <input class="a-label" id="name-int" type="text" placeholder="Entrez un nom">
+  </div>
+
+  <h3 class="text-1xl font-bold p-6">
+    Prénom du stagiaire
+  </h3>
+  <div class="md:w-2/3 pl-6">
+    <input class="a-label" id="surname-int" type="text" placeholder="Entrez un prénom">
+  </div>
+<!--************ Evaluation ************** -->
+
+<h2 class="text-2xl font-bold underline p-6">
+  Evaluation
+</h2>
+<h3 class="text-1xl font-bold pl-6 pb-6">
+  Les formateurs :
+</h3>
+<h3 class="text-1xl font-regular pl-6 pb-6">
+  1 - Quel formateur était le plus en retard ?
+</h3>
+
+<div id="late" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pierre</label>
+</div>
+<div class="flex items-center">
+  <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Olivier</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+  2 - Quel formateur possède également une formation militaire ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+  3 - Quel formateur a donner le plus de cours a distance ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+  4 - Quel formateur possède également une formation militaire ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+  3 - Quel formateur n'était pas présent au début de la formation UI ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+ 4 - Question en attente ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+
+<h3 class="text-1xl font-regular p-6">
+  2 - Question en attente ?
+</h3>
+
+<div id="military" class="pl-6">
+  <div class="flex items-center mb-4">
+  <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alain</label>
+</div>
+<div class="flex items-center">
+  <input  id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+  <label for="default-radio-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Michele</label>
+  </div>
+</div>
+</body>
+
+</html>
